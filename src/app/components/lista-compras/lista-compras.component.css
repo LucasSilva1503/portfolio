@@ -1,0 +1,38 @@
+section {
+  margin-top: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+}
+
+button {
+  text-decoration: none;
+  display: inline-block;
+  padding: 8px 30px;
+  border-radius: 40px;
+  background: #fff;
+  color: #ff6978;
+  z-index: 8;
+  transition: 0.3s;
+  border: solid aliceblue 2px;
+  font-weight: 700;
+  margin-bottom: 20px;
+  margin-left: 2px;
+  margin-right: 2px;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+button:hover {
+  color: aliceblue;
+  background-color: #ff6978;
+  border: solid #ff6978 2px;
+}
+
+a {
+  text-decoration: none;
+}
+
+input {
+}

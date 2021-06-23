@@ -1,0 +1,141 @@
+/*===============|IMAGEM HEADER|===============*/
+
+section {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  padding: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+section::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 100px;
+  background: linear-gradient(to top, #1c0522, transparent);
+  z-index: 8;
+}
+
+section img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  pointer-events: none;
+}
+
+section img#moon {
+  mix-blend-mode: screen;
+  -ms-transform: translate(-10%, -10%);
+  transform: translate(0%, 15%);
+}
+
+section img#mountain_front {
+  z-index: 8;
+}
+
+/*===============|TEXTO HEADER|===============*/
+#text {
+  position: absolute;
+  color: #fff;
+  white-space: nowrap;
+  font-size: 7.5vw;
+  z-index: 8;
+}
+
+#btn {
+  text-decoration: none;
+  display: inline-block;
+  padding: 8px 30px;
+  border-radius: 40px;
+  background: #fff;
+  color: #2b1055;
+  font-size: 1.5em;
+  z-index: 8;
+  transform: translateY(100px);
+  transition: 0.3s;
+}
+#btn:hover {
+  color: #ff6978;
+  background-color: rgba(0, 0, 0, 0);
+  border: solid #ff6978 2px;
+}
+
+#moon {
+  position: fixed;
+}
+
+/*===============|SECÇÃO SOBRE|===============*/
+
+.sec {
+  position: relative;
+  padding: 100px;
+  background: #1c0522;
+}
+
+.sec h2 {
+  font-size: 3.5em;
+  margin-bottom: 10px;
+  color: #fff;
+}
+.sec h3 {
+  font-size: 1.7em;
+  margin-bottom: 10px;
+  color: #fff;
+}
+
+.sec p {
+  font-size: 1em;
+  color: #fff;
+}
+
+#about {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+/*===============|PROFILE PIC|===============*/
+
+#right {
+  width: 30%;
+  height: 400px;
+  display: flex;
+  justify-content: center;
+}
+
+#right img {
+  width: 350px;
+  height: 350px;
+  border-radius: 50%;
+  -moz-border-radius: 50%;
+  border: solid #ff6978 3px;
+  -webkit-border-radius: 50%;
+  box-shadow: 1px 1px 15px 5px #ff6978;
+  margin-top: 20px;
+}
+
+/*===============|ABOUT TEXT|===============*/
+#left {
+  width: 70%;
+  font-size: 20px;
+}
+
+#left a {
+  text-decoration: none;
+  color: #ff6978;
+  font-weight: 600;
+}
+
+/*===============|@MEDIA|===============*/
+@media (max-width: 576px) {
+  #text {
+    font-size: 75px;
+  }
+}

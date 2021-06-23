@@ -1,0 +1,13 @@
+<div class="page">
+  <div class="text">
+    <input type="text" placeholder="Designação" #name />
+    <input type="text" placeholder="Preço" #price />
+    <button (click)="addList(name.value, price.value)">Add</button>
+  </div>
+  <div class="lista">
+    <div class="produto" *ngFor="let article of serviceList.shopList">
+      <p [ngClass]="{ comprados: article.cart }">{{ article.name }}</p>
+      <p>{{ article.price }}€</p>
+    </div>
+  </div>
+</div>

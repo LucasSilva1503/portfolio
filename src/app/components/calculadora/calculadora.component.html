@@ -1,0 +1,14 @@
+<section class="calculadora">
+  <div class="nums">
+    <input [(ngModel)]="valor1" (input)="calcula()" />
+    <input
+      placeholder="+"
+      [(ngModel)]="sinal"
+      (input)="calcula()"
+      maxlength="1"
+    />
+    <input [(ngModel)]="valor2" (input)="calcula()" />
+    <p id="equal">=</p>
+    <p>{{ resultado }}</p>
+  </div>
+</section>

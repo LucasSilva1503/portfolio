@@ -1,0 +1,15 @@
+<section>
+  <div id="cont">
+    <div class="botoes">
+      <h1>{{ piada }}</h1>
+      <button (click)="getPiada()">Random Piada!</button>
+      <button (click)="getMorePiada(valor.value)">
+        Random Piada com Categoria!
+      </button>
+      <input type="text" #valor placeholder="Search..." />
+    </div>
+    <div class="piadas" *ngFor="let item of piadas.result">
+      <p>{{ item.value }}</p>
+    </div>
+  </div>
+</section>

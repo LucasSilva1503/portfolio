@@ -1,0 +1,190 @@
+section {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  background-color: rgba(255, 255, 255, 0.363);
+  border-radius: 25px;
+  box-shadow: 1px 1px 15px 5px #ff6978;
+  width: 80vw;
+  height: 500px;
+}
+
+h1 {
+  color: aliceblue;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 65px;
+  margin-top: 12px;
+  margin-bottom: 50px;
+}
+
+button {
+  text-decoration: none;
+  padding: 4px 15px;
+  border-radius: 40px;
+  color: #2b1055;
+  font-size: 15px;
+  z-index: 8;
+  transition: 0.3s;
+  cursor: pointer;
+  text-transform: uppercase;
+  font-weight: 700;
+  margin-left: 5px;
+  margin-right: 5px;
+  border: solid white 2px;
+}
+
+#buttons {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 15px;
+}
+
+#merc {
+  background-image: linear-gradient(
+    to right bottom,
+    #b6babf,
+    #b6babf,
+    #999da2,
+    #7d8086,
+    #62656b,
+    #484b51,
+    #3f444c,
+    #353d48,
+    #2b3743,
+    #2b3743,
+    #1f6563,
+    #1f6563,
+    #1f6563
+  );
+  color: aliceblue;
+}
+
+#ferrari {
+  background-image: linear-gradient(
+    to right,
+    #6b1219,
+    #7c111a,
+    #8e1019,
+    #9f0e18,
+    #b10d16,
+    #b90d14,
+    #c00d12,
+    #c80d10,
+    #c80d10,
+    #c80d10,
+    #c80d10,
+    #c80d10
+  );
+  color: black;
+}
+
+#redbull {
+  background-image: linear-gradient(
+    to left top,
+    rgb(0, 0, 85),
+    rgb(0, 0, 85),
+    rgb(0, 0, 85),
+    rgb(0, 0, 85),
+    rgb(0, 0, 85),
+    #ee1c17,
+    #d7740e,
+    #d7740e
+  );
+  color: aliceblue;
+}
+
+#mclaren {
+  background-image: linear-gradient(
+    to bottom,
+    #094fb2,
+    #094fb2,
+    #fc6a38,
+    #fc6a38,
+    #fc6a38,
+    #f87b24,
+    #f87b24,
+    #f87b24,
+    #f87b24,
+    #f87b24
+  );
+  color: aliceblue;
+}
+
+#aston {
+  background-image: linear-gradient(
+    to top,
+    #be0651,
+    #a2206e,
+    #13426e,
+    #13426e,
+    #13426e,
+    #034064,
+    #003e5a,
+    #003e5a,
+    #003e5a,
+    #003e5a,
+    #003e5a
+  );
+  color: aliceblue;
+}
+
+#alpha {
+  background-image: linear-gradient(
+    to right top,
+    #a00116,
+    #a00116,
+    #a00116,
+    #e0c8e4,
+    #e0c8e4,
+    #e0c8e4,
+    #e0c8e4,
+    #a00116,
+    #a00116,
+    #a00116
+  );
+  color: black;
+}
+
+#alpine {
+  background-image: linear-gradient(
+    to right top,
+    #ff1500,
+    #ff1500,
+    #ffffff,
+    #3c75cd,
+    #0379c6,
+    #0379c6,
+    #0379c6,
+    #0379c6,
+    #0379c6
+  );
+  color: black;
+}
+
+#tauri {
+  background-color: #142739;
+  color: aliceblue;
+}
+
+#haas {
+  background-image: linear-gradient(
+    319deg,
+    #ff0000 0%,
+    #ffffff 37%,
+    #0004ff 100%
+  );
+
+  color: black;
+}
+
+#williams {
+  background-image: linear-gradient(319deg, #1100ff 0%, #7eecff 100%);
+  color: aliceblue;
+  border: solid #d29a31 2px;
+}

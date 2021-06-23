@@ -1,0 +1,50 @@
+/*===============|SECTION|===============*/
+
+section {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  background-color: rgba(255, 255, 255, 0.363);
+  border-radius: 25px;
+  box-shadow: 1px 1px 15px 5px #ff6978;
+}
+
+/*===============|CALCULADORA|===============*/
+
+.nums {
+  width: 80vw;
+  height: calc(80vh - 56px);
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+}
+
+/*===============|INPUTS|===============*/
+
+input,
+p {
+  font-size: 7rem;
+  color: white;
+  margin: 0vh 1vw 0vh 1vw;
+  text-align: center;
+  border: none;
+  border-bottom: 3px solid white;
+  background-color: transparent;
+  outline: none;
+  max-width: 10vw;
+  min-width: 10vw;
+  overflow: hidden;
+}
+
+input:focus {
+  color: #ff6978;
+}

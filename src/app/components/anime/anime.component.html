@@ -1,0 +1,21 @@
+<section>
+  <div class="page">
+    <div class="choice">
+      <h1>Animes</h1>
+      <input type="text" #anime />
+      <button (click)="getAnimes(anime.value)">Search!</button>
+    </div>
+
+    <div class="lista" *ngIf="animes !== undefined">
+      <router-outlet *ngIf="this.rt.url.split('/')[2]"></router-outlet>
+      <div *ngFor="let item of animes.results">
+        <!-- <h3>{{item.title}}</h3> -->
+        <a
+          [routerLink]="['/anime', item.mal_id]"
+          routerLinkActive="router-link-active"
+          ><img src="{{ item.image_url }}"
+        /></a>
+      </div>
+    </div>
+  </div>
+</section>
